@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="The Montpellier-based web agency Poisson Soluble has been a creative force since 2005: From websites, web and smartphone applications to graphic design, nothing stops us!">
+    <meta property="og:image" content="https://www.poisson-soluble.com/img/facebook-card.png" />
+    <base href="/">
+
+    <title>Poisson Soluble :: Web Agency Montpellier FRANCE</title>
+
+    <link rel="icon" type="image/png" href="img/poisson.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/luz8vws.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <img id="poisson" src="img/poisson_gray.png" style="display:none">
+    <img id="poisson_super" src="img/poisson_gray.png" style="display:none">
+    <canvas id="canvas"></canvas>
+
+    <section class="home d-flex justify-content-center align-items-center">
+        <header>
+              <div class="container">
+                  <img alt="Poisson Soluble" class="logo" src="img/logo.svg">
+                  <div class="slogan-text">Poisson Soluble</div>
+                  <a class="btn-header-contact btn go-contact" href="#"><span>Contact us</span></a>
+                  <a href="index.html" title="Version française" class="lang"><img src="img/lang_fr.svg"></a>
+              </div>
+        </header>
+        <div class="slogan">
+            <h1>The web without<br>the bony bits.</h1>
+            <div class="open-game text-center"><i class="far fa-play-circle"></i></div>
+        </div>
+        <div class="settings">
+            <div class="close-game text-center"><i class="far fa-times-circle"></i></div>
+            <h1 class="play">Play!</h1>
+            <div class="setting">
+                <span>Population</span>
+                <input type="range" min="1" max="1000" value="100" class="fish-option" id="POPULATION">
+            </div>
+            <div class="setting">
+                <span>Size</span>
+                <input type="range" min="20" max="100" value="50" class="fish-option" id="POISSON_SIZE">
+            </div>
+            <div class="setting">
+                <span>Speed</span>
+                <input type="range" min="1" max="7" value="1" class="fish-option" id="DIST_PER_TICK">
+            </div>
+            <div class="setting">
+                <span>Distance</span>
+                <input type="range" min="0" max="50" value="30" class="fish-option" id="MIN_SEPARATION">
+            </div>
+            <div class="setting">
+                <span>Beemode</span>
+                <input class="beemode" type="checkbox">
+            </div>
+        </div>
+        <a class="go-down go-down-en" title="Click to go down!" href="#">Take the plunge<br>with us</a>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-start align-items-center" data-aos="fade-right">
+                    <h2>The Poisson Soluble Agency<span>.</span></h2>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <p><strong>Poisson Soluble</strong>, founded in 2005, specialises in <strong>multimedia communication</strong>. We leverage every type of digital media to sell your message effectively.<br>We’re involved at every stage of the process – from the original concept via the design phase to the execution of the visual content – so we can tell your story in pictures.</p>
+                    <h3>A team that’s not afraid to get its feet wet</h3>
+                    <p>We’re a dynamic, free-thinking team, which means we can accommodate all your needs. We’re local and we listen, we’re reactive and we’re creative – that’s who we are and what we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-mobile">
+      <div class="slide-mobile-single" style="background:url('img/vision.jpg') center center no-repeat; background-size:cover;">
+            <h3>We're<br>like Fish.</h3>
+            <p>We’ve been weaving our way through the ever-expanding world of new technology for 15 years, always alert, always listening and with the widest possible perspective.</p>
+      </div>
+      <div class="slide-mobile-single" style="background:url('img/freedom.jpg') center center no-repeat; background-size:cover;">
+            <h3>We are<br>Soluble.</h3>
+            <p>We like to immerse ourselves in an environment that is different to our own, throwing ourselves totally into each new project.</p>
+      </div>
+      <div class="slide-mobile-single" style="background:url('img/meduses.jpg') center center no-repeat; background-size:cover;">
+            <h3>We're<br>like Fish.</h3>
+            <p>Every new project is like discovering a new ocean: we join forces one moment, we go our separate way the next, occupying the space, rising and falling, adapting with agility.</p>
+      </div>
+      <div class="slide-mobile-single" style="background:url('img/fish.jpg') center center no-repeat; background-size:cover;">
+            <h3>We are<br>Soluble.</h3>
+            <p>We’re available, which means nothing is impossible; we’re solution-focused, which means nothing is insoluble: we develop tailor-made answers, and we create a variety of applications and modules to meet your specific needs.</p>
+      </div>
+      <div class="slide-mobile-single" style="background:url('img/road.jpg') center center no-repeat; background-size:cover;">
+            <h3>We're<br>like Fish.</h3>
+            <p>And we never stop – ever: as a matter of principle, we’re pro-active and responsive, we keep track, we advise, we adapt and we optimise your digital presence.</p>
+      </div>
+      <div class="slide-mobile-single" style="background:url('img/color.jpg') center center no-repeat; background-size:cover;">
+            <h3>We are<br>Soluble.</h3>
+            <p>We blend our team skills to offer you a comprehensive package. As an across-the-board agency, we can take care of all your digital needs.</p>
+      </div>
+    </section>
+
+    <section class="slider">
+          <div class="navigation d-flex justify-content-center align-items-center" data-aos="zoom-in">
+              <div class="navig prev"><i class="fas fa-caret-left"></i></div>
+              <div class="navig next"><i class="fas fa-caret-right"></i></div>
+          </div>
+          <div class="part-left">
+              <div class="part-left-slider">
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/vision2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We're<br>like Fish.</h3>
+                      <p>We’ve been weaving our way through the ever-expanding world of new technology for 15 years, always alert, always listening and with the widest possible perspective.</p>
+                  </div>
+                </div>
+                <div class="slide" style="background:url('img/freedom.jpg') center center no-repeat; background-size:cover;"></div>
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/meduses2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We're<br>like Fish.</h3>
+                      <p>Every new project is like discovering a new ocean: we join forces one moment, we go our separate way the next, occupying the space, rising and falling, adapting with agility.</p>
+                  </div>
+                </div>
+                <div class="slide" style="background:url('img/fish.jpg') center center no-repeat; background-size:cover;"></div>
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/road2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We're<br>like Fish.</h3>
+                      <p>And we never stop – ever: as a matter of principle, we’re pro-active and responsive, we keep track, we advise, we adapt and we optimise your digital presence.</p>
+                  </div>
+                </div>
+                <div class="slide" style="background:url('img/color.jpg') center center no-repeat; background-size:cover;"></div>
+              </div>
+          </div>
+          <div class="part-right">
+              <div class="part-right-slider">
+                <div class="slide" style="background:url('img/vision.jpg') center center no-repeat; background-size:cover;"></div>
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/freedom2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We are<br>Soluble.</h3>
+                      <p>We like to immerse ourselves in an environment that is different to our own, throwing ourselves totally into each new project.</p>
+                  </div>
+                </div>
+                <div class="slide" style="background:url('img/meduses.jpg') center center no-repeat; background-size:cover;"></div>
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/fish2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We are<br>Soluble.</h3>
+                      <p>We’re available, which means nothing is impossible; we’re solution-focused, which means nothing is insoluble: we develop tailor-made answers, and we create a variety of applications and modules to meet your specific needs.</p>
+                  </div>
+                </div>
+                <div class="slide" style="background:url('img/road.jpg') center center no-repeat; background-size:cover;"></div>
+                <div class="slide d-flex justify-content-center align-items-center" style="background:url('img/color2.jpg') center center no-repeat; background-size:cover;">
+                  <div class="slide-text">
+                      <h3>We are<br>Soluble.</h3>
+                      <p>We blend our team skills to offer you a comprehensive package. As an across-the-board agency, we can take care of all your digital needs.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <h1>What we can do<br>for you<span>.</span></h1>
+        <div class="row">
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="50">
+                <img alt="Identité visuelle" class="img-fluid" src="img/ico_identite_visuelle.svg">
+                <h4>Visual<br>identity</h4>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                <img alt="Site web & Ecommerce" class="img-fluid" src="img/ico_site.svg">
+                <h4>Website<br>& e-commerce</h4>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="150">
+                <img alt="Application smartphone" class="img-fluid" src="img/ico_app_mobile.svg">
+                <h4>Smartphone<br>applications</h4>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img alt="Application web" class="img-fluid" src="img/ico_app_web.svg">
+                <h4>Web<br>applications</h4>
+            </div>
+        </div>
+        <div class="skills-contact text-center" data-aos="zoom-in">
+            <a class="btn btn-lg go-contact" href="#"><span>Contact us</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 d-flex justify-content-center align-items-center" data-aos="fade-right">
+                    <h2>We’re<br>on the same<br>wavelength<span>.</span></h2>
+                </div>
+                <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="50"><img alt="Predict" src="img/clients/logo_predict.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="150"><img alt="AXA" src="img/clients/logo_axa.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="200"><img alt="Groupama" src="img/clients/logo_groupama.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="250"><img alt="EPTB Gardons" src="img/clients/logo_gardons.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="300"><img alt="Madeleines du Pic" src="img/clients/logo_madeleines.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="350"><img alt="Generali" src="img/clients/logo_generali.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="400"><img alt="Printemps des Comédiens" src="img/clients/logo_printemps.png"></div>
+                        <div class="col-xl-3 col-lg-4 col-md-3 col-6 text-center" data-aos="zoom-in" data-aos-delay="450"><img alt="Montpellier Danse" src="img/clients/logo_mdanse.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="wrapper-gradient">
+            <div class="circle"></div>
+            <h1>Come and have<br> a <span id="word-change"></span> coffee.</h1>
+            <img class="bocal" alt="Adresse de l'agence" src="img/fish.svg" data-aos="zoom-in">
+            <p class="address">Domaine de Fitzgerald - Lot 28<br>Chemin du Mas Rouge 34970 LATTES - France<br>
+			      Tél. : <a class="tel" href="tel:+33663194204">+33 663 194 204</a></p>
+            <a href="https://www.google.fr/maps/place/Poisson+Soluble/@43.5903578,3.9187935,15z/data=!4m5!3m4!1s0x0:0xf10a9902cc7c71d1!8m2!3d43.5903578!4d3.9187935" title="Find us on Google Maps" target="_blank" class="coord">43.5903 • 3.9187</a>
+            <p class="fb"><a target="_blank" href="https://www.facebook.com/AgenceWebPoissonSoluble/" title="Follow the news of Poisson Soluble on Facebook">Follow us on <i class="fab fa-lg fa-facebook-square"></i></a></p>
+            <a class="email" title="Contact us !" href="mailto:hello@poisson-soluble.com?subject=Contact depuis le site poisson-soluble.com">hello@poisson-soluble.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-5 d-flex align-items-center">©2020 Poisson Soluble</div>
+                <div class="col-md-4 col-2 d-flex justify-content-center align-items-center"><img class="logo-footer" alt="Poisson Soluble" src="img/logo_footer.svg"></div>
+                <div class="col-md-4 col-5 d-flex justify-content-end align-items-center"><a class="open-mentions" href="#">Legal info</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mentions">
+      <div class="mentions-wrapper d-flex justify-content-center align-items-center">
+          <div class="mentions-text">
+              <div class="close-mentions"><i class="far fa-times-circle"></i></div>
+              <h3>Legal info<span>.</span></h3>
+              <p><strong>SARL L.R.V.P « Poisson Soluble »</strong></p>
+              <div class="spacer10"></div>
+              <p>Share capital : 16 200 €<br>
+                RCS : 482369337<br>
+                SIRET : 482 369 337 00043<br>
+                TVA intracom. : FR40482369337
+              </p>
+              <div class="spacer10"></div>
+              <p>Chemin du Mas Rouge, lot 28<br>
+            Domaine de Fitzgerald<br>
+            34970 LATTES - France<br>
+            Email : <strong><a href="mailto:contact@poisson-soluble.com">contact@poisson-soluble.com</a></strong><br>
+            Tél. : <a class="tel" href="tel:+33663194204">+33 663 194 204</a>
+              </p>
+              <div class="spacer10"></div>
+              <p>Publication manager : <strong>Patrice ROBERT</strong></p>
+              <div class="spacer10"></div>
+              <p>Web hosting : <strong>OVH</strong><br>
+              2 rue Kellerman - 59100 Roubaix - France</p>
+              <div class="spacer10"></div>
+              <p>Photos credits : <strong>Unsplash.com</strong></p>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/fishflocking.js"></script>
+    <script src="js/poisson.js"></script>
+    <script src="js/poisson_EN.js"></script>
+  </body>
+</html>
