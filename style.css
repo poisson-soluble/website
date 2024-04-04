@@ -137,6 +137,81 @@ footer a:hover {text-decoration: underline;}
 .close-mentions {display:inline-block; position:absolute; top:20px; right:20px; cursor:pointer; opacity:0.5; transition:0.3s;}
 .close-mentions:hover {opacity:1;}
 
+/* DEMARCHE RSE - Accueil */
+
+.acces-rse {
+  position:fixed;
+  right:0;
+  bottom: -1px;
+  z-index: 2;
+  cursor: pointer;
+  transition:1s all;
+}
+
+.acces-rse:hover {
+  scale:1.1;
+}
+
+/* DEMARCHE RSE */
+
+.section-rse {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.section-rse-contenu {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color:white;
+  padding:5%;
+}
+
+
+.bloc-txt-rse {
+  font-size: 24px !important;
+  font-weight: 600;
+  letter-spacing: normal;
+  padding: 2px 20px;
+  background-color: rgba(255, 255, 255, .2);
+  line-height: normal;
+  border-radius: 10px;
+}
+
+.text-light {
+  font-family: 'poppins', sans-serif; font-weight:100;
+}
+
+.titre-rse {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  letter-spacing: normal;
+  line-height: 1em;
+}
+
+.bloc-titre-rse {
+  font-size: 24px;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.rse p {
+  font-size: 16px;
+}
+
+.list-rse li {
+  font-size: 16px;
+  font-weight: 100;
+  list-style: url('img/list-rse.svg');
+  padding: 10px 0px;
+}
+
+
 /* --- RESPONSIVE --- */
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -215,4 +290,6 @@ footer a:hover {text-decoration: underline;}
   .slick-dots li.slick-active button {background:#f7d100; color:#313236; border:1px solid #f7d100; font-weight:600;}
   .mentions-text {font-size:12px; margin:10px; padding:30px;}
   .typed-cursor {font-size:36px;}
+  .section-rse-contenu {padding:10%;}
 }
+
