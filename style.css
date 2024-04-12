@@ -142,7 +142,7 @@ footer a:hover {text-decoration: underline;}
 .acces-rse {
   position:absolute;
   right:0;
-  bottom: 5px;
+  bottom: 0px;
   z-index: 2;
   cursor: pointer;
   transition:1s all;
