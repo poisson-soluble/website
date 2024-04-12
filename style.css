@@ -140,9 +140,9 @@ footer a:hover {text-decoration: underline;}
 /* DEMARCHE RSE - Accueil */
 
 .acces-rse {
-  position:fixed;
+  position:absolute;
   right:0;
-  bottom: -1px;
+  bottom: 5px;
   z-index: 2;
   cursor: pointer;
   transition:1s all;
